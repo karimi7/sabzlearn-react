@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../../Components/Footer/Footer';
 import Navbar from '../../Components/Navbar/Navbar';
@@ -6,8 +5,14 @@ import Topbar from '../../Components/Topbar/Topbar';
 
 import './Register.css';
 import Input from '../../Components/Form/Input';
+import Button from '../../Components/Form/Button';
 
 export default function Register() {
+    const registerNewUser = (event) => {
+        event.preventDefault();
+        console.log('User Register');
+    };
+
     return (
         <>
             <Topbar />
@@ -51,14 +56,19 @@ export default function Register() {
                                 className="login-form__password-input"
                                 type="password"
                                 placeholder="رمز عبور"
-                                element='input'
+                                element="input"
                             />
                             <i className="login-form__password-icon fa fa-lock-open"></i>
                         </div>
-                        <button className="login-form__btn" type="submit">
+                        <Button
+                            className="login-form__btn"
+                            type="submit"
+                            onClick={registerNewUser}
+                            disabled={false}
+                        >
                             <i className="login-form__btn-icon fa fa-user-plus"></i>
                             <span className="login-form__btn-text">عضویت</span>
-                        </button>
+                        </Button>
                     </form>
                     <div className="login__des">
                         <span className="login__des-title">

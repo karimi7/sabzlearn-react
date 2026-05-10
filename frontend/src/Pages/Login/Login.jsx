@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router';
 import Footer from '../../Components/Footer/Footer';
 import Navbar from '../../Components/Navbar/Navbar';
@@ -6,8 +5,14 @@ import Topbar from '../../Components/Topbar/Topbar';
 
 import './Login.css';
 import Input from '../../Components/Form/Input';
+import Button from '../../Components/Form/Button';
 
 export default function Login() {
+    const userLogin = (event) => {
+        event.preventDefault();
+        console.log('User Login');
+    };
+
     return (
         <>
             <Topbar />
@@ -46,10 +51,15 @@ export default function Login() {
                             />
                             <i className="login-form__password-icon fa fa-lock-open"></i>
                         </div>
-                        <button className="login-form__btn" type="submit">
+                        <Button
+                            className="login-form__btn"
+                            type="submit"
+                            onClick={userLogin}
+                            disabled={false}
+                        >
                             <i className="login-form__btn-icon fas fa-sign-out-alt"></i>
                             <span className="login-form__btn-text">ورود</span>
-                        </button>
+                        </Button>
                         <div className="login-form__password-setting">
                             <label className="login-form__password-remember">
                                 <input
