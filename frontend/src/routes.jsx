@@ -3,7 +3,7 @@ import CourseInfo from './pages/CourseInfo/CourseInfo';
 import Category from './pages/Category/Category';
 import ArticleInfo from './pages/ArticleInfo/ArticleInfo';
 import Courses from './pages/Courses/Courses';
-import Login from './pages/Login/Login';
+import Login from './Pages/Login/Login';
 import Register from './pages/Register/Register';
 
 const routes = [
