@@ -118,8 +118,16 @@
   margin-top: 0.8rem;
   display: flex;
   align-items: center;
-  background-color: #2bce56;
   position: relative;
+  transition: all 250ms ease;
+}
+
+.login-form__btn-success {
+  background-color: #2bce56;
+}
+
+.login-form__btn-error {
+  background-color: #ce2b2b;
 }
 
 .login-form__btn-icon {
