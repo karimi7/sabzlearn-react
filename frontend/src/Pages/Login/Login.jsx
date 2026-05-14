@@ -12,7 +12,7 @@ import {
     requiredValidator,
     minValidator,
     maxValidator,
-    // emailValidator,
+    emailValidator,
 } from '../../validators/rules';
 
 export default function Login() {
@@ -66,7 +66,7 @@ export default function Login() {
                                     requiredValidator(),
                                     minValidator(8),
                                     maxValidator(20),
-                                    // emailValidator()
+                                    emailValidator()
                                 ]}
                                 id="username"
                                 onInputHandler={onInputHandler}
