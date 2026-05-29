@@ -45,7 +45,8 @@
   .col-6 {
     width: 100%;
   }
-  .about-us__box{
-    justify-content: center;
+
+  .about-us__box {
+    justify-content: start;
   }
 }
