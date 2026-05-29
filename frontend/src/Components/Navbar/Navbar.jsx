@@ -188,7 +188,7 @@ export default function Navbar() {
                         </a>
                         <a href="#" className="main-header__profile">
                             <span className="main-header__profile-text">
-                                محمدامین سعیدی راد
+                                ورود / ثبت نام
                             </span>
                         </a>
                     </div>
