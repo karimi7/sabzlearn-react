@@ -1,10 +1,10 @@
-import Index from './pages/Index/Index';
-import CourseInfo from './pages/CourseInfo/CourseInfo';
-import Category from './pages/Category/Category';
-import ArticleInfo from './pages/ArticleInfo/ArticleInfo';
-import Courses from './pages/Courses/Courses';
-import Login from './Pages/Login/Login';
-import Register from './Pages/Register/Register';
+import Index from './pages/Index/Index.jsx';
+import CourseInfo from './pages/CourseInfo/CourseInfo.jsx';
+import Category from './pages/Category/Category.jsx';
+import ArticleInfo from './pages/ArticleInfo/ArticleInfo.jsx';
+import Courses from './pages/Courses/Courses.jsx';
+import Login from './Pages/Login/Login.jsx';
+import Register from './Pages/Register/Register.jsx';
 
 const routes = [
     { path: '/', element: <Index /> },
